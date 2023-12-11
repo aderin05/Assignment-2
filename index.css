@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    background-color: #E5E5E5;
+}
+
+main{
+    width: 80%;
+    height: 580px;
+    top: 5vh;
+    margin: auto;
+    background-color: aliceblue;
+    position: relative;
+}
+
+main div:first-child{
+    width: 35%;
+    position: absolute;
+    left: 90px;
+    top: 140px;
+}
+
+img{
+    width: 60px;
+    height: 68px;
+}
+
+main div:last-child{
+    background-color: #fff;
+    position: absolute;
+    width: 32.2%;
+    height: 400px;
+    right: 90px;
+    top: 42px;
+    bottom: 42px;
+    border-radius: 6px;
+    padding: 40px;
+    z-index: 2;
+}
+
+.span1{grid-area: first-row;}
+
+.span2{grid-area: second-column;}
+
+.span3{grid-area: second-row;}
+
+.span4{grid-area: fourth-column;}
+
+.span5 {grid-area: third-row;}
+
+.span6{grid-area: sixth-column;}
+
+.span7{grid-area: fourth-row;}
+
+.span8{grid-area: last-row;}
+
+.container{
+    display: grid;
+    grid-template-areas: 'first-row second-column'
+    'second-row fourth-column'
+    'third-row sixth-column'
+    'fourth-row fourth-row'
+    'last-row last-row';
+    gap: 14px;
+}
+
+input, select{
+    display: block;
+    padding: 5px 0;
+    margin-top: 7px;
+}
+
+select[name=activity], input[type=password], input[type=submit]{
+     width: 100%;
+}
+
+input[type=submit]{
+    background-color: rgb(101, 194, 197);
+    color: #fff;
+    border: none;
+    width: 104%;
+}
+
+input:focus, select:focus{
+    outline: 1px solid #2EC4B6;
+    border: 1px solid #2EC4B6;
+}
+
+a{
+    color: rgb(101, 194, 197);
+}
+
+div:last-child p{
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    main{
+        width: 80%;
+        margin: auto;
+        background-color: aliceblue;
+        position: relative;
+        height: unset;
+        top: unset;
+        padding: 20px;
+    }
+
+    main div:first-child, main div:last-child{
+        display: block;
+        width: 95%;
+        position: unset;
+        padding: 10px 10px 0;
+        height: unset;
+        border-radius: unset;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .container{
+        display: block;
+    }
+
+    input, select{
+        width: 100%;
+        margin: 10px 5px 10px 0;
+    }
+
+    .terms{
+        background-color: aliceblue;
+        padding: 10px;
+    }
+}
