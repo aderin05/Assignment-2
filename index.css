@@ -34,7 +34,7 @@ main div:last-child{
     bottom: 42px;
     border-radius: 6px;
     padding: 40px;
-    z-index: 2;
+    box-shadow: 4px 4px 20px rgb(101, 194, 197);
 }
 
 .span1{grid-area: first-row;}
@@ -108,9 +108,9 @@ div:last-child p{
         display: block;
         width: 95%;
         position: unset;
-        padding: 10px 10px 0;
         height: unset;
         border-radius: unset;
+        padding: 10px 10px 0;
     }
 
     h1{
@@ -128,6 +128,5 @@ div:last-child p{
 
     .terms{
         background-color: aliceblue;
-        padding: 10px;
     }
 }
