@@ -82,6 +82,7 @@ input[type=submit]{
     background-color: rgb(101, 194, 197);
     color: #fff;
     border: none;
+    padding: 10px;
 }
 
 input:focus, select:focus{
