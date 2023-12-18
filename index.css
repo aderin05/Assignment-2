@@ -5,19 +5,27 @@ body{
 
 main{
     width: 80%;
-    height: 580px;
+    height: 90vh;
     top: 5vh;
     margin: auto;
     background-color: aliceblue;
     position: relative;
+    padding: 0 7%;
+}
+
+.terms{
+    display: none;
 }
 
 main div:first-child{
     width: 35%;
     position: absolute;
-    left: 90px;
     top: 140px;
 }
+
+main div:first-child p:last-child{
+    display: none;
+} 
 
 img{
     width: 60px;
@@ -27,9 +35,9 @@ img{
 main div:last-child{
     background-color: #fff;
     position: absolute;
-    width: 32.2%;
+    width: 40%;
     height: 400px;
-    right: 90px;
+    right: 7%;
     top: 42px;
     bottom: 42px;
     border-radius: 6px;
@@ -60,24 +68,20 @@ main div:last-child{
     'third-row sixth-column'
     'fourth-row fourth-row'
     'last-row last-row';
-    gap: 14px;
+    gap: 25px;
 }
 
 input, select{
     display: block;
-    padding: 5px 0;
+    padding: 5px 3px;
     margin-top: 7px;
-}
-
-select[name=activity], input[type=password], input[type=submit]{
-     width: 100%;
+    width: 100%;
 }
 
 input[type=submit]{
     background-color: rgb(101, 194, 197);
     color: #fff;
     border: none;
-    width: 104%;
 }
 
 input:focus, select:focus{
@@ -106,12 +110,42 @@ div:last-child p{
 
     main div:first-child, main div:last-child{
         display: block;
-        width: 95%;
+        width: 100%;
         position: unset;
         height: unset;
         border-radius: unset;
+        box-shadow: unset;
+        padding: unset;
+    }
+
+    main div:first-child{
         padding: 10px 10px 0;
     }
+
+    form{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px 10px;
+        box-shadow: 4px 4px 20px rgb(101, 194, 197);
+    }
+
+    input , select{
+        width: 95%;
+        margin: 10px 5px 10px 0;
+    }
+
+    select, [type=submit]{
+        width: 97.5%;
+    }
+
+    .first-p{
+        display: none;
+    } 
+
+    main div:first-child p:last-child{
+        display: block;
+    } 
 
     h1{
         font-size: 25px;
@@ -121,12 +155,11 @@ div:last-child p{
         display: block;
     }
 
-    input, select{
-        width: 100%;
-        margin: 10px 5px 10px 0;
+    .terms{
+        display: block;
+        width: initial;
+        background-color: aliceblue;
+        padding: 30px;
     }
 
-    .terms{
-        background-color: aliceblue;
-    }
 }
